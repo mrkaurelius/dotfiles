@@ -1,7 +1,10 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PATH:$HOME/bin:/usr/local/bin
+export PATH=$PATH:$HOME/.poetry/bin
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="bira"
+
+fpath+=~/.zfunc
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
@@ -17,8 +20,6 @@ alias xo="xdg-open"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
