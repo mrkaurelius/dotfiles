@@ -1,5 +1,5 @@
 export PATH=$PATH:$HOME/bin:/usr/local/bin
-export PATH=$PATH:$HOME/.poetry/bin
+export PATH=$PATH:$HOME/.local/bin
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="bira"
@@ -17,6 +17,9 @@ alias zshconfig="vim ~/.zshrc"
 alias vim="nvim"
 alias pgd="ping 8.8.8.8"
 alias xo="xdg-open"
+alias ip="ip -c"
+alias dfe="df -hTt ext4"
+alias aptcs="apt-cache pkgnames | fzf | xargs apt show"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
