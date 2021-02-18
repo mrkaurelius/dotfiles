@@ -1,3 +1,5 @@
+colo ron
+
 set cmdheight=2
 set hidden "ex modunu devreden cıkarma
 syntax on
@@ -6,11 +8,9 @@ set number relativenumber "hybrid number
 set incsearch
 set bs=2 " backspace ayarı
 set showcmd
-
 set tabstop=2
 set shiftwidth=2
 set expandtab
-
 " search config
 set ignorecase
 set smartcase " bu nedir ?
@@ -31,4 +31,5 @@ map <C-v> "+p
 
 let mapleader=","
 nnoremap <leader>v <C-v>
-colo ron
+nnoremap <Leader>o o<Esc>
+
