@@ -1,12 +1,26 @@
 {
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "java.semanticHighlighting.enabled": true,
-    "python.languageServer": "Pylance",
-    "workbench.colorTheme": "Visual Studio Dark",
-    "explorer.confirmDelete": false,
-    "terminal.integrated.fontFamily": "monospace",
-    "window.zoomLevel": 0,
     "editor.lineNumbers": "relative",
-    "java.configuration.checkProjectSettingsExclusions": false
+    "editor.suggestSelection": "first",
+    "explorer.confirmDelete": false,
+
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.semanticHighlighting.enabled": true,
+
+    "python.languageServer": "Pylance",
+
+    "terminal.integrated.fontFamily": "monospace",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Visual Studio Dark",
+
+    "vim.useSystemClipboard": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.statusBarColorControl": true,
+
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    }
 }
