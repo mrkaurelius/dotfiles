@@ -15,7 +15,7 @@ fpath+=~/.zfunc
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
-plugins=(git tmux colored-man-pages vi-mode docker themes)
+plugins=(git tmux colored-man-pages vi-mode docker themes systemd zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,3 +39,5 @@ alias cvenv="python3 -m venv venv"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source "$HOME/.cargo/env"
